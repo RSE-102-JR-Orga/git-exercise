@@ -5,10 +5,11 @@ from math import isclose
 # Task A: see comment in function `test_vector_index_access`
 # Task B: see comment in function `test_3d_vector_subtraction`
 
+
 class Vector:
     def __init__(self, coordinates: List[float]) -> None:
         # self._coordinates = coordinates.copy()
-        self._coordinates = coordinates # Task A
+        self._coordinates = coordinates.copy()  # Task A
 
     def __getitem__(self, i: int) -> float:
         return self._coordinates[i]
